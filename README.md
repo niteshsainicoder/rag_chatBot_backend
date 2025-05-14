@@ -10,8 +10,8 @@ This is the backend for a RAG-powered chatbot that allows users to query a set o
 - **Embeddings:** [Jina AI Embeddings](https://jina.ai)
 - **Vector Store:** [Qdrant Cloud](https://qdrant.tech)
 - **Session Cache:** Redis
-- **LLM API:** Google Gemini Pro (via REST API)
-- **Storage:** Local file system (for PDFs/news uploads)
+- **LLM API:** Google Gemini  (via REST API)
+
 
 ---
 
