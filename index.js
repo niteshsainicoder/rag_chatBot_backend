@@ -7,6 +7,8 @@ import { QdrantClient } from '@qdrant/js-client-rest';
 
 dotenv.config();
 
+import cors from "cors"
+app.use(cors({origin:"*",credentials:true}))
 const app = express();
 
  export const redisClient = createClient({
