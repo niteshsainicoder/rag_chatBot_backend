@@ -4,12 +4,12 @@ import { chatRouter } from './src/routes/chatRoute.js';
 import { createClient } from 'redis';
 import { ingestRoute } from './src/routes/ingestRoute.js';
 import { QdrantClient } from '@qdrant/js-client-rest';
+import cors from "cors"
 
 dotenv.config();
 
-import cors from "cors"
-app.use(cors({origin:"*",credentials:true}))
 const app = express();
+app.use(cors({origin:"*",credentials:true}))
 
  export const redisClient = createClient({
   url: process.env.REDIS_URL,
