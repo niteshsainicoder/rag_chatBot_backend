@@ -48,7 +48,7 @@ export const getHistory = async (req, res) => {
 };
 
 export const resetSession = async (req, res) => {
-  const { sessionId } = req.body;
+  const { sessionId } = req.params;
   try {
     await redisClient.del(sessionId);
     res.status(200).json({ success: true });
